@@ -1,15 +1,18 @@
 #!/usr/bin/env node
-const path = require("path");
-const { addAlias } = require("module-alias");
+require("./utils/initial");
+const { program } = require("commander");
+const json = require("@/package.json");
 
-addAlias("@", path.resolve(__dirname, "./src/"));
 
-process.on("uncaughtException", (error) => {
-  console.log(error);
-  process.exit(0);
-});
+program
+  .usage("")
+  .version(json.version);
 
-process.on("unhandledRejection", (error) => {
-  console.log(error);
-  process.exit(0);
-});
+program
+  .command("")
+  .description("")
+  .action(require("@/actions/index"));
+
+program.parse(process.argv);
+
+
