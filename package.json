@@ -1,7 +1,7 @@
 {
   "name": "cli-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "用于创建cyber系列工具的命令行工具",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
