@@ -2,18 +2,13 @@
 <div align="center"></div>
 <h2 align="center">Install</h2>
 
-```bash
-npm install  -g
-```
+<div align="center">
+  本脚本暂时不支持安装,您可以使用git:协议进行手动安装
+</div>
 
 <h2 align="center">Usage</h2>
 
-npm init 方式:
-```bash
-npm init 
-```
-
 全局命令方式:
 ```bash
-create-
+
 ```
