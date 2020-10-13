@@ -22,5 +22,6 @@
     "inquirer": "^7.3.3",
     "jsonfile": "^6.0.1",
     "module-alias": "^2.2.2"
-  }
+  },
+  "bin": "./.bin/index.js"
 }
