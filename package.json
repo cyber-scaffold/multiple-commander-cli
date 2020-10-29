@@ -20,6 +20,7 @@
   "dependencies": {
     "@cyber-tools/cli-utils": "^1.0.5",
     "commander": "^6.0.0",
+    "deep-extend": "^0.6.0",
     "es6-promisify": "^6.1.1",
     "execa": "^4.0.3",
     "inquirer": "^7.3.3",
