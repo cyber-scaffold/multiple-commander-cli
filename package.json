@@ -25,7 +25,8 @@
     "execa": "^4.0.3",
     "inquirer": "^7.3.3",
     "jsonfile": "^6.0.1",
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "path-exists": "^4.0.0"
   },
   "bin": "./.bin/index.js"
 }
