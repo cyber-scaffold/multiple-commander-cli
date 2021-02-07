@@ -1,7 +1,7 @@
 {
-  "name": "cli-project",
+  "name": "multiple-commander-cli",
   "version": "1.0.0",
-  "description": "用于创建cyber系列工具的命令行工具",
+  "description": "多命令模式的命令行脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
