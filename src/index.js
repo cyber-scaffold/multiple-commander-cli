@@ -1,6 +1,5 @@
 import { program } from "commander";
-import {name,version} from "@/package.json";
-
+import {name,version} from "@@/package.json";
 
 program
   .usage(name)

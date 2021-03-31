@@ -7,10 +7,10 @@ module.exports={
   plugins:[
     [require.resolve("@babel/plugin-transform-runtime")],
     [require.resolve("babel-plugin-module-resolver"), {
-      root: [path.resolve(__dirname,"./")],
+      root: ["./src/"],
       alias: {
-        "@": path.resolve(__dirname,"./"),
-        "@@": path.resolve(__dirname,"./")
+        "@": "./src/",
+        "@@": "./"
       }
     }]
   ]

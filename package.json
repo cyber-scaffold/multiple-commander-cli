@@ -2,7 +2,7 @@
   "name": "multiple-commander-cli",
   "version": "1.0.0",
   "description": "多命令模式的命令行脚手架",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "babel src --out-dir=dist",
     "prepublishOnly": "npm run build && npm version major && git push"
