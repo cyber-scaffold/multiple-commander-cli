@@ -1,12 +1,10 @@
-const { program } = require("commander");
-require("@cyber-tools/cli-utils/initial");
-require("module-alias").addAlias("@", __dirname);
-const json = require("@/package.json");
+import { program } from "commander";
+import {name,version} from "@/package.json";
 
 
 program
-  .usage(json.name)
-  .version(json.version);
+  .usage(name)
+  .version(version);
 
 program
   .command("")
@@ -20,7 +18,7 @@ program
       process.exit(0);
     };
   })
-  .action(require("@/actions/index"));
+  .action(require("@/actions/index").default);
 
 program.parse();
 
