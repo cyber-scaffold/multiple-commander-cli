@@ -1,7 +1,6 @@
 const path=require("path");
 
 module.exports={
-  exclude:/node_modules/,
   presets: [ 
     require.resolve("@babel/preset-env")
   ],

@@ -4,7 +4,8 @@
   "description": "多命令模式的命令行脚手架",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir=dist",
+    "prepublishOnly": "npm run build && npm version major && git push"
   },
   "publishConfig": {
     "access": "public"
@@ -18,6 +19,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/register": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "babel-plugin-module-resolver": "^4.1.0",
     "@cyber-tools/cli-utils": "^1.0.5",
     "commander": "^6.0.0",
     "deep-extend": "^0.6.0",
@@ -30,10 +36,6 @@
   },
   "bin": "./.bin/index.js",
   "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/register": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
-    "@babel/plugin-transform-runtime": "^7.13.10",
-    "babel-plugin-module-resolver": "^4.1.0"
+    "@babel/cli": "^7.13.14"
   }
 }
