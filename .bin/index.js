@@ -17,4 +17,4 @@ require("@babel/register")({
   ]
 });
 require("@cyber-tools/cli-utils/initial");
-require("../index");
+require("../src/main");
