@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const path=require("path");
 require("@babel/register")({
+  cache:true,
   cwd:path.resolve(__dirname,"../"),
   presets: [ 
     require.resolve("@babel/preset-env")
