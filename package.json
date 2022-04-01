@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "babel src --out-dir=dist",
-    "prepublishOnly": "npm run build && npm version major && git push"
+    "prepublishOnly": "npm run build"
   },
   "publishConfig": {
     "access": "public"
@@ -20,19 +20,21 @@
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.13.14",
-    "@babel/register": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
     "@babel/plugin-transform-runtime": "^7.13.10",
-    "babel-plugin-module-resolver": "^4.1.0",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/register": "^7.13.14",
     "@cyber-tools/cli-utils": "^1.0.5",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "colors": "1.4.0",
     "commander": "^8.1.0",
+    "consola": "2.15.3",
     "deep-extend": "^0.6.0",
-    "es6-promisify": "^6.1.1",
     "execa": "^4.0.3",
     "inquirer": "^7.3.3",
     "jsonfile": "^6.0.1",
+    "log-update": "5.0.0",
     "module-alias": "^2.2.2",
-    "path-exists": "^4.0.0"
+    "path-exists": "4.0.0"
   },
   "bin": "./.bin/index.js",
   "devDependencies": {

@@ -1,27 +1,28 @@
 import {program} from "commander";
 import {name,version} from "@@/package.json";
 
-import {test_action_argument1,test_action_option1,test_action1} from "@/actions/test_action1";
-import {test_action_argument2,test_action_option2,test_action2} from "@/actions/test_action2";
+import {create_config_file} from "@/actions/create_config_file";
+import {test_command_argument,test_command_option,test_command} from "@/actions/test_command";
 
 program
   .usage(name)
-  .version(version);
+  .version(version)
 
 program
-  .command("test1")
-  .description("多类型测试命令1")
-  .addArgument(test_action_argument1)
-  .addOption(test_action_option1)
-  .action(test_action1);
+  .command("init")
+  .description("创建运行时配置文件")
+  .action(create_config_file);
 
 program
-  .command("test2")
-  .description("多类型测试命令2")
-  .addArgument(test_action_argument2)
-  .addOption(test_action_option2)
-  .action(test_action2);
+  .command("test")
+  .description("这是测试命令")
+  .addArgument(test_command_argument)
+  .addOption(test_command_option)
+  .action(test_command);
 
 program.parse();
+
+
+
 
 
